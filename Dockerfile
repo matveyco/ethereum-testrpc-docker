@@ -2,6 +2,7 @@ FROM library/ubuntu:trusty
 MAINTAINER bob
 USER root
 
+RUN apt-get update
 RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:ethereum/ethereum
 RUN add-apt-repository ppa:ethereum/ethereum-dev
