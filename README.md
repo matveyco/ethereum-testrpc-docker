@@ -1,5 +1,5 @@
 # ethereum-testrpc-docker
-A dockerfile ready to use in Microsoft Windows with Testrpc for Ethereum.
+A dockerfile ready to use in Microsoft Windows with Testrpc for Ethereum. :)
 No pain no gain, I put it here after 2 hours (no,  4) of pain on Microsoft Windows to make it works.
 
 ## Installation 
