@@ -9,9 +9,13 @@ RUN apt-get -y install software-properties-common
 
 RUN apt-get -y install build-essential
 RUN apt-get -y install git
+RUN apt-get -y install curl
 
 # RUN apt-get -y install nodejs
-RUN apt-get -y install nodejs-legacy
+#RUN apt-get -y install nodejs-legacy
+
+RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+RUN apt-get -y install -y nodejs
 RUN apt-get -y install npm
 
 # RUN npm install -g node-gyp
