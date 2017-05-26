@@ -8,6 +8,7 @@ RUN apt-get -y install software-properties-common
 #RUN apt-get -y install ethereum solc 
 
 RUN apt-get -y install build-essential
+RUN apt-get -y install git
 
 # RUN apt-get -y install nodejs
 RUN apt-get -y install nodejs-legacy
