@@ -10,6 +10,7 @@ RUN apt-get update
 RUN apt-get -y install ethereum solc 
 
 RUN apt-get -y install nodejs
+RUN apt-get -y install nodejs-legacy
 RUN apt-get -y install npm
 
 RUN npm install -g node-gyp
