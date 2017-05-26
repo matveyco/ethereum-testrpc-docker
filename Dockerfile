@@ -11,12 +11,20 @@ RUN apt-get -y install build-essential
 RUN apt-get -y install git
 RUN apt-get -y install curl
 
+RUN apt-get -y install apt-transport-https
+
+RUN touch /etc/apt/sources.list.d/nodesource.list
+RUN echo 'deb https://deb.nodesource.com/node_6.x xenial main' >> /etc/apt/sources.list.d/nodesource.list
+RUN echo 'deb-src https://deb.nodesource.com/node_6.x xenial main' >> /etc/apt/sources.list.d/nodesource.list
+
+RUN curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
+
 # RUN apt-get -y install nodejs
 #RUN apt-get -y install nodejs-legacy
 
 #RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get -y install nodejs
-RUN apt-get -y install nodejs-legacy
+#RUN apt-get -y install nodejs-legacy
 RUN apt-get -y install npm
 
 # RUN npm install -g node-gyp
