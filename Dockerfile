@@ -14,7 +14,7 @@ RUN apt-get -y install curl
 # RUN apt-get -y install nodejs
 #RUN apt-get -y install nodejs-legacy
 
-RUN curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get -y install -y nodejs
 RUN apt-get -y install npm
 
