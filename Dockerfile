@@ -9,10 +9,15 @@ RUN add-apt-repository ppa:ethereum/ethereum-dev
 RUN apt-get update
 RUN apt-get -y install ethereum solc 
 
-RUN apt-get install -y python-pip python-dev libyaml-dev libssl-dev
+RUN apt-get -y install nodejs
+RUN apt-get -y install npm
 
-RUN pip install eth-testrpc
-RUN ifconfig
+RUN npm install -g ethereumjs-testrpc
+
+#RUN apt-get install -y python-pip python-dev libyaml-dev libssl-dev
+
+#RUN pip install eth-testrpc
+#RUN ifconfig
 
 EXPOSE 8545
 
