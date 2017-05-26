@@ -1,6 +1,4 @@
-FROM library/ubuntu:trusty
-MAINTAINER bob
-USER root
+FROM ubuntu:16.04
 
 RUN apt-get update
 RUN apt-get -y install software-properties-common
