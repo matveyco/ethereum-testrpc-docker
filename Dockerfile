@@ -16,6 +16,7 @@ RUN apt-get -y install curl
 
 RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
 RUN apt-get -y install -y nodejs
+RUN apt-get -y install nodejs-legacy
 RUN apt-get -y install npm
 
 # RUN npm install -g node-gyp
