@@ -12,6 +12,8 @@ RUN apt-get -y install ethereum solc
 RUN apt-get -y install nodejs
 RUN apt-get -y install npm
 
+RUN npm install -g node-gyp
+
 RUN npm install -g ethereumjs-testrpc
 
 #RUN apt-get install -y python-pip python-dev libyaml-dev libssl-dev
