@@ -27,9 +27,9 @@ RUN apt-get -y install nodejs
 #RUN apt-get -y install nodejs-legacy
 RUN apt-get -y install npm
 
-RUN npm install -g node-gyp
+#RUN npm install -g node-gyp
 
-RUN npm install -g ethereumjs-testrpc
+#RUN npm install -g ethereumjs-testrpc
 
 #RUN apt-get install -y python-pip python-dev libyaml-dev libssl-dev
 
@@ -38,4 +38,4 @@ RUN npm install -g ethereumjs-testrpc
 
 EXPOSE 8545
 
-CMD testrpc --domain=0.0.0.0
+#CMD testrpc --domain=0.0.0.0
