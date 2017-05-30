@@ -23,6 +23,8 @@ RUN curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 #RUN apt-get -y install nodejs-legacy
 
 #RUN curl -sL https://deb.nodesource.com/setup_6.x | bash -
+RUN apt-get update
+
 RUN apt-get -y install nodejs
 #RUN apt-get -y install nodejs-legacy
 #RUN apt-get -y install npm
