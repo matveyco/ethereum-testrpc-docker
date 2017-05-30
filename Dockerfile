@@ -26,6 +26,10 @@ RUN curl -s https://deb.nodesource.com/gpgkey/nodesource.gpg.key | apt-key add -
 RUN apt-get update
 
 RUN apt-get -y install nodejs
+
+# updating npm to latest version
+RUN curl https://www.npmjs.com/install.sh | sh
+
 #RUN apt-get -y install nodejs-legacy
 #RUN apt-get -y install npm
 
